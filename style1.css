@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "_Raleway";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../../../../../fonts/Raleway_Light.woff2") format("woff2"), url("../../../../../../fonts/Raleway_Light.woff") format("woff"), url("../../../../../../fonts/Raleway_Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "_IRANYekanWeb";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../../../../../fonts/IRANYekanWeb_Light.woff2") format("woff2"), url("../../../../../../fonts/IRANYekanWeb_Light.woff") format("woff"), url("../../../../../../fonts/IRANYekanWeb_Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "_Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../../../../../fonts/Raleway_Regular.woff2") format("woff2"), url("../../../../../../fonts/Raleway_Regular.woff") format("woff"), url("../../../../../../fonts/Raleway_Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "_IRANYekanWeb";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../../../../../fonts/IRANYekanWeb_Regular.woff2") format("woff2"), url("../../../../../../fonts/IRANYekanWeb_Regular.woff") format("woff"), url("../../../../../../fonts/IRANYekanWeb_Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "_Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../../../../../../fonts/Raleway_ExtraBold.woff2") format("woff2"), url("../../../../../../fonts/Raleway_ExtraBold.woff") format("woff"), url("../../../../../../fonts/Raleway_ExtraBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "_IRANYekanWeb";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../../../../../../fonts/IRANYekanWeb_Bold.woff2") format("woff2"), url("../../../../../../fonts/IRANYekanWeb_Bold.woff") format("woff"), url("../../../../../../fonts/IRANYekanWeb_Bold.ttf") format("truetype")
+}
+
+html {
+    background-color: white
+}
+
+body {
+    background-color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center
+}
+
+.WF.ltr_in body {
+    font-family: "_Raleway", "_IRANYekanWeb";
+    font-weight: 400;
+    font-style: normal
+}
+
+.WF.rtl_in body {
+    font-family: "_IRANYekanWeb", "_Raleway";
+    font-weight: 400;
+    font-style: normal
+}
+
+.LF.ltr_in body {
+    font-family: "Raleway", "IRANYekanWeb";
+    font-weight: 400;
+    font-style: normal
+}
+
+.LF.rtl_in body {
+    font-family: "IRANYekanWeb", "Raleway";
+    font-weight: 400;
+    font-style: normal
+}
+
+body main {
+    max-width: 40em;
+    text-align: center;
+    padding: 1em
+}
+
+body main .pic {
+    position: relative;
+    display: inline-block;
+    font-size: 0
+}
+
+body main .pic img {
+    width: 100%
+}
+
+body main .pic .mask {
+    left: -5%;
+    right: -5%;
+    top: -5%;
+    bottom: -5%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+body main .pic .mask.circle {
+    background-image: url(../../../../../../images/mask/round-silver.png)
+}
+
+body main .pic .mask.circle.white {
+    background-image: url(../../../../../../images/mask/round-white.png)
+}
+
+body main .pic .mask.hexagon {
+    background-image: url(../../../../../../images/mask/hexagon-white.png)
+}
+
+body main .pic {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: zoomIn10;
+    animation-name: zoomIn10;
+    width: 6.25rem;
+    height: 6.25rem
+}
+
+@-webkit-keyframes zoomIn10 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn10 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+body main .name {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn100;
+    animation-name: fadeIn100;
+    display: block;
+    height: 0
+}
+
+@-webkit-keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+body main .name h1 {
+    padding: .2em 0 0;
+    font-size: 1.38em;
+    color: #000;
+    display: inline-block
+}
+
+.WF.ltr_in body main .name h1 {
+    font-family: "_Raleway", "_IRANYekanWeb";
+    font-weight: 300;
+    font-style: normal
+}
+
+.WF.rtl_in body main .name h1 {
+    font-family: "_IRANYekanWeb", "_Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.ltr_in body main .name h1 {
+    font-family: "Raleway", "IRANYekanWeb";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.rtl_in body main .name h1 {
+    font-family: "IRANYekanWeb", "Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+body main h2 {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn100;
+    animation-name: fadeIn100;
+    margin-top: 3em;
+    font-size: .88em;
+    color: #9E9E9E
+}
+
+@-webkit-keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.WF.ltr_in body main h2 {
+    font-family: "_Raleway", "_IRANYekanWeb";
+    font-weight: 300;
+    font-style: normal
+}
+
+.WF.rtl_in body main h2 {
+    font-family: "_IRANYekanWeb", "_Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.ltr_in body main h2 {
+    font-family: "Raleway", "IRANYekanWeb";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.rtl_in body main h2 {
+    font-family: "IRANYekanWeb", "Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+body main .social {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn100;
+    animation-name: fadeIn100;
+    padding: .5em 0
+}
+
+@-webkit-keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+body main .social li {
+    display: inline-block
+}
+
+body main .social li a {
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: #9E9E9E;
+    display: inline-block;
+    margin: .5em 1em
+}
+
+body main .social li a:hover {
+    color: #000
+}
+
+body main .social li a:before {
+    font-size: 1.5em
+}
+
+html.rtl_in body main .social li a:before {
+    margin-left: 0
+}
+
+html.ltr_in body main .social li a:before {
+    margin-right: 0
+}
+
+body main .last_modified {
+    display: none
+}
+
+[data-mdl='resume_options'] {
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    top: 1em;
+    left: 1em;
+    color: #ccc
+}
+
+[data-mdl='resume_options']:hover {
+    color: #b3b3b3
+}

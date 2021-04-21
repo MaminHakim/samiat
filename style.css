@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@font-face {
+    font-family: dana;
+    src: url(/fonts/dana-regular.woff2);
+}
+:root {
+    --background-color: #0ABAB5;
+    --secondary-color: #9bcf9b;
+    --text-dark: #fff;
+    --text: hsla(0,0%,100%,.65);
+    --text-light: hsla(0,0%,100%,.65);
+    --text-lighter: #ffffff;
+    --blue: #3498db;
+    --green: #27ae60;
+    --yellow: #feca57;
+    --red: #c0392b;
+    --white: #ffffff;
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #1e1f23;
+      --secondary-color: #232428;
+      --text-dark: #efefef;
+      --text: #c4c5c9;
+      --text-light: #0abab479;
+      --text-lighter: #0ABAB5;
+    }
+  }
+
+html {
+    background: var(--background-color);
+}
+
+
+
+
+body {
+    background: var(--background-color);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center
+}
+
+.WF.ltr_in body {
+    font-family: "Raleway", "dana";
+    font-weight: 400;
+    font-style: normal
+}
+
+.WF.rtl_in body {
+    font-family: "dana", "Raleway";
+    font-weight: 400;
+    font-style: normal
+}
+
+.LF.ltr_in body {
+    font-family: "Raleway", "dana";
+    font-weight: 400;
+    font-style: normal
+}
+
+.LF.rtl_in body {
+    font-family: "dana", "Raleway";
+    font-weight: 400;
+    font-style: normal
+}
+
+body main {
+    max-width: 40em;
+    text-align: center;
+    padding: 1em
+}
+
+body main .pic {
+    position: relative;
+    display: inline-block;
+    font-size: 0
+}
+
+body main .pic img {
+    width: 100%
+}
+
+body main .pic .mask {
+    left: -5%;
+    right: -5%;
+    top: -5%;
+    bottom: -5%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+body main .pic .mask.circle {
+    background-image: url(./assets/round-silver.png)
+}
+
+body main .pic .mask.circle.white {
+    background-image: url(./assets/round-white.png)
+}
+
+body main .pic .mask.hexagon {
+    background-image: url(./assets/hexagon-white.png)
+}
+
+body main .pic {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: zoomIn10;
+    animation-name: zoomIn10;
+    width: 6.25rem;
+    height: 6.25rem
+}
+
+@-webkit-keyframes zoomIn10 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn10 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+body main .name {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn100;
+    animation-name: fadeIn100;
+    display: block;
+    height: 0;
+    color: var(--text-lighter);
+}
+
+@-webkit-keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+body main .name h1 {
+    padding: .2em 0 0;
+    font-size: 1.38em;
+    color: var(--text-dark);
+    display: inline-block
+}
+
+.WF.ltr_in body main .name h1 {
+    font-family: "Raleway", "dana";
+    font-weight: 300;
+    font-style: normal
+}
+
+.WF.rtl_in body main .name h1 {
+    font-family: "dana", "Raleway";
+    font-weight: 600;
+    font-style: normal
+}
+
+.LF.ltr_in body main .name h1 {
+    font-family: "Raleway", "dana";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.rtl_in body main .name h1 {
+    font-family: "dana", "Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+body main h2 {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn100;
+    animation-name: fadeIn100;
+    margin-top: 3em;
+    font-size: .88em;
+    color: var(--text-light)
+}
+
+@-webkit-keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.WF.ltr_in body main h2 {
+    font-family: "Raleway", "dana";
+    font-weight: 300;
+    font-style: normal
+}
+
+.WF.rtl_in body main h2 {
+    font-family: "dana", "Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.ltr_in body main h2 {
+    font-family: "Raleway", "dana";
+    font-weight: 300;
+    font-style: normal
+}
+
+.LF.rtl_in body main h2 {
+    font-family: "dana", "Raleway";
+    font-weight: 300;
+    font-style: normal
+}
+
+body main .social {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn100;
+    animation-name: fadeIn100;
+    padding: .5em 0
+}
+
+@-webkit-keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+body main .social li {
+    display: inline-block
+}
+
+body main .social li a {
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: var(--text-light);
+    display: inline-block;
+    margin: .5em 1em
+}
+
+body main .social li a:hover {
+    color: var(--text-dark)
+}
+
+body main .social li a:before {
+    font-size: 1.5em
+}
+
+html.rtl_in body main .social li a:before {
+    margin-left: 0
+}
+
+html.ltr_in body main .social li a:before {
+    margin-right: 0
+}
+
+body main .last_modified {
+    display: none
+}
+
+[data-mdl='resume_options'] {
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    top: 1em;
+    left: 1em;
+    color: #ccc
+}
+
+[data-mdl='resume_options']:hover {
+    color: #b3b3b3
+}
