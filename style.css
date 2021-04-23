@@ -89,7 +89,9 @@ body main .pic {
 }
 
 body main .pic img {
-    width: 100%
+    width: 100%;
+
+    
 }
 
 body main .pic .mask {
